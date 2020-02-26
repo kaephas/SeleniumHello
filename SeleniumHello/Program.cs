@@ -35,7 +35,7 @@ class SeleniumHello
             Console.WriteLine("Header: " + result.Text);
             IWebElement summary =
                 wait.Until(e => e.FindElement(By.CssSelector(".article-content h5 > p:nth-child(2)")));
-            Console.WriteLine("Summary2:" + summary.Text);
+            Console.WriteLine("Summary: " + summary.Text);
         }
     }
 }
